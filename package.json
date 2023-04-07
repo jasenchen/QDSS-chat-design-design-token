@@ -1,7 +1,7 @@
 {
-  "name": "qd-design-token",
-  "version": "2.0.34",
-  "description": "企点设计系统design token",
+  "name": "qdss-chat-design-token",
+  "version": "0.0.1",
+  "description": "企点设计子系统- chat design设计令牌",
   "main": "src/variables.css",
   "scripts": {
     "build": "node ./build/start.js",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasenchen/QDS--design-token.git"
+    "url": "git+https://github.com/jasenchen/QDSS-chat-design-design-token.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jasenchen/QDS--design-token/issues"
+    "url": "https://github.com/jasenchen/QDSS-chat-design-design-token/issues"
   },
-  "homepage": "https://github.com/jasenchen/QDS--design-token#readme"
+  "homepage": "https://github.com/jasenchen/QDSS-chat-design-design-token#readme"
 }
