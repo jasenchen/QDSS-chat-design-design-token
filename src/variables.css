@@ -147,10 +147,12 @@
 	--color-error-light-hover: #fde0dc;
 	--color-error-light-active: #fbbfb9;
 	--color-error-text: #6a1421;
-	--shadow-small: 0px 2px 4px 0px #12131914,0px 0px 2px 0px #12131914,0px 0px 1px 0px #12131914;
-	--shadow-medium: 0px 6px 12px 0px #1213191f,0px 0px 4px 0px #12131914,0px 0px 1px 0px #12131914;
-	--shadow-large: 0px 0px 1px 0px #12131914,0px 0px 8px 0px #12131914,0px 16px 32px 0px #12131929;
-	--shadow-small-light: 0px 0px 1px 0px #12131914,0px 0px 6px 0px #12131905,0px 2px 12px 0px #1213190f;
+	--shadow-small: 0px 2px 4px 0px rgba(18,19,25,0.08),0px 0px 2px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08);
+	--shadow-medium: 0px 6px 12px 0px rgba(18,19,25,0.12),0px 0px 4px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08);
+	--shadow-large: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 8px 0px rgba(18,19,25,0.08),0px 16px 32px 0px rgba(18,19,25,0.16);
+	--shadow-small-light: 0px 0px 1px 0px rgba(18,19,25,0.12),0px 0px 6px 0px rgba(18,19,25,0.02),0px 2px 12px 0px rgba(18,19,25,0.06);
+	--shadow-medium-light: 0px 8px 24px 0px rgba(18,19,25,0.08),0px 0px 12px 0px rgba(18,19,25,0.04),0px 0px 1px 0px rgba(18,19,25,0.12);
+	--shadow-large-light: 0px 0px 1px 0px rgba(18,19,25,0.12),0px 0px 18px 0px rgba(18,19,25,0.08),0px 16px 64px 0px rgba(18,19,25,0.16);
 	--fontFamilies-pingfang-sc: PingFang SC;
 	--lineHeights-0: 32px;
 	--lineHeights-1: 28px;
