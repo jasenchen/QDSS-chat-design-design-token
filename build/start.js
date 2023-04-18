@@ -85,12 +85,21 @@ function traverse(data = {}) {
             // 阴影
             else if (item.type === 'boxShadow') {
                 let vstr = [];
+               
                 // 0 4px 6px rgba(0, 0, 0, 6%), 0 1px 10px rgba(0, 0, 0, 8%), 0 2px 4px rgba(0, 0, 0, 12%);
                 value.forEach(itm => {
-                    vstr.push(`${itm.x}px ${itm.y}px ${itm.blur}px ${itm.spread}px ${itm.color}`);
+                    if(itm.type === 'dropShadow'){
+                        vstr.push(`${itm.x}px ${itm.y}px ${itm.blur}px ${itm.spread}px ${itm.color}`);
+                    }
+
                 });
                 value = vstr.join(',');
+
             }
+            //背景模糊
+            else if (item.type === 'bgBlur'){
+                value = `blur(${value}px);`;
+            }           
             // eg: #ffffff00
             else if (/^#[\d\w]{8}$/.test(value)) {
                 value = toRGBA(value);

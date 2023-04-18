@@ -147,12 +147,12 @@
 	--color-error-light-hover: #fde0dc;
 	--color-error-light-active: #fbbfb9;
 	--color-error-text: #6a1421;
-	--shadow-small: 0px 2px 4px 0px rgba(18,19,25,0.08),0px 0px 2px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08);
-	--shadow-medium: 0px 6px 12px 0px rgba(18,19,25,0.12),0px 0px 4px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08);
-	--shadow-large: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 8px 0px rgba(18,19,25,0.08),0px 16px 32px 0px rgba(18,19,25,0.16);
-	--shadow-small-light: 0px 0px 1px 0px rgba(18,19,25,0.12),0px 0px 6px 0px rgba(18,19,25,0.02),0px 2px 12px 0px rgba(18,19,25,0.06);
-	--shadow-medium-light: 0px 8px 24px 0px rgba(18,19,25,0.08),0px 0px 12px 0px rgba(18,19,25,0.04),0px 0px 1px 0px rgba(18,19,25,0.12);
-	--shadow-large-light: 0px 0px 1px 0px rgba(18,19,25,0.12),0px 0px 18px 0px rgba(18,19,25,0.08),0px 16px 64px 0px rgba(18,19,25,0.16);
+	--shadow-small: 0px 2px 4px 0px rgba(18,19,25,0.08),0px 0px 2px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08); /* 小尺寸投影 */
+	--shadow-medium: 0px 6px 12px 0px rgba(18,19,25,0.12),0px 0px 4px 0px rgba(18,19,25,0.08),0px 0px 1px 0px rgba(18,19,25,0.08); /* 中尺寸投影 */
+	--shadow-large: 0px 0px 1px 0px rgba(18,19,25,0.08),0px 0px 8px 0px rgba(18,19,25,0.08),0px 16px 32px 0px rgba(18,19,25,0.16); /* 大尺寸投影 */
+	--shadow-small-light: 0px 0px 1px 0px rgba(18,19,25,0.16),0px 0px 6px 0px rgba(18,19,25,0.02),0px 2px 12px 0px rgba(18,19,25,0.06); /* 小尺寸轻投影 */
+	--shadow-medium-light: 0px 8px 24px 0px rgba(18,19,25,0.08),0px 0px 12px 0px rgba(18,19,25,0.04),0px 0px 1px 0px rgba(18,19,25,0.16); /* 中尺寸轻投影 */
+	--shadow-large-light: 0px 0px 1px 0px rgba(18,19,25,0.16),0px 0px 18px 0px rgba(18,19,25,0.08),0px 16px 64px 0px rgba(18,19,25,0.16); /* 大尺寸轻投影 */
 	--fontFamilies-pingfang-sc: PingFang SC;
 	--lineHeights-0: 32px;
 	--lineHeights-1: 28px;
@@ -172,6 +172,7 @@
 	--headline-bold: var(pingfang-sc-0) var(4)/var(0) var(pingfang-sc);
 	--title-bold: var(pingfang-sc-0) var(3)/var(1) var(pingfang-sc);
 	--subtitle-regular: var(pingfang-sc-1) var(2)/var(2) var(pingfang-sc);
+	--subtitle-medium: var(pingfang-sc-2) var(2)/var(2) var(pingfang-sc);
 	--body-regular: var(pingfang-sc-1) var(1)/var(3) var(pingfang-sc);
 	--body-medium: var(pingfang-sc-2) var(1)/var(3) var(pingfang-sc);
 	--caption-regular: var(pingfang-sc-1) var(0)/var(4) var(pingfang-sc);
@@ -179,4 +180,12 @@
 	--textCase-none: none;
 	--textDecoration-none: none;
 	--paragraphIndent-0: 0px;
+	--bubble-bg-each-other-normal: var(--color-gray-1); /* 对方消息气泡背景色 */
+	--bubble-bg-each-other-active: var(--color-gray-2); /* 对方消息气泡背景色-按下 */
+	--bubble-bg-myself-normal: var(--color-brand-1); /* 我方消息气泡背景色 */
+	--bubble-bg-myself-active: var(--color-brand-2); /* 我方气泡背景色-按下 */
+	--bubble-structured-bg-normal: var(--color-bg-1); /* 结构化消息背景 */
+	--bubble-structured-bg-active: var(--color-gray-2); /* 结构化消息背景按下 */
+	--bubble-tructured-shadow-normal: var(--shadow-medium-light); /* 结构化消息投影 */
+	--bgBlur-medium: blur(20px);; /* 背景模糊中号 */
 }
