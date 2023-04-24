@@ -85,15 +85,17 @@ function traverse(data = {}) {
             // 阴影
             else if (item.type === 'boxShadow') {
                 let vstr = [];
-               
                 // 0 4px 6px rgba(0, 0, 0, 6%), 0 1px 10px rgba(0, 0, 0, 8%), 0 2px 4px rgba(0, 0, 0, 12%);
-                value.forEach(itm => {
-                    if(itm.type === 'dropShadow'){
-                        vstr.push(`${itm.x}px ${itm.y}px ${itm.blur}px ${itm.spread}px ${itm.color}`);
-                    }
-
-                });
-                value = vstr.join(',');
+                if(typeof(item.value) != 'string'){
+                    value.forEach(itm => {
+                        if(itm.type === 'dropShadow'){
+                            vstr.push(`${itm.x}px ${itm.y}px ${itm.blur}px ${itm.spread}px`);
+                        }
+    
+                    });
+                    value = vstr.join(',');
+                }
+                
 
             }
             //背景模糊
